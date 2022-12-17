@@ -1,0 +1,327 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'iXiAo9'
+theme = 'LoveIt'
+# 语言名称 ["English", "简体中文", "Français", "Polski", ...]
+languageName = "简体中文"
+
+# 默认每页列表显示的文章数目
+paginate = 12
+
+# 版权描述，仅仅用于 SEO
+copyright = "版权测试"
+
+# 是否使用 emoji 代码
+enableEmoji = true
+#启用后出现报错
+#enableGitInfo = true
+# 作者配置
+[author]
+  name = "小九"
+  email = "qwq@xki.cc"
+  link = "#"
+# 菜单配置
+[menu]
+  [[menu.main]]
+    weight = 1
+    identifier = "posts"
+    # 你可以在名称 (允许 HTML 格式) 之前添加其他信息, 例如图标
+    pre = ""
+    # 你可以在名称 (允许 HTML 格式) 之后添加其他信息, 例如图标
+    post = ""
+    name = "文章"
+    url = "/posts/"
+    # 当您将鼠标悬停在此菜单链接上时, 将显示标题
+    title = "所有文章"
+  [[menu.main]]
+    weight = 2
+    identifier = "tags"
+    pre = ""
+    post = ""
+    name = "标签"
+    url = "/tags/"
+    title = "所有标签"
+  [[menu.main]]
+    weight = 3
+    identifier = "categories"
+    pre = ""
+    post = ""
+    name = "分类"
+    url = "/categories/"
+    title = "所有分类"  
+  [[menu.main]]
+    weight = 4
+    identifier = "link"
+    pre = ""
+    post = ""
+    name = "友链"
+    url = "/link/"
+    title = "友链墙"     
+  [[menu.main]]
+    weight = 5
+    identifier = "about"
+    pre = ""
+    post = ""
+    name = "关于"
+    url = "/about/"
+    title = "关于我"      
+[params]
+  # 网站默认主题 ["auto", "light", "dark"]
+  defaultTheme = "auto"
+  # 公共 git 仓库路径，仅在 enableGitInfo 设为 true 时有效
+  gitRepo = "https://github.com/dillonzq/LoveIt"
+  # 日期格式
+  #dateFormat = "2022-12-16"
+  dateFormat = "2006-01-02"
+  # 网站标题, 用于 Open Graph 和 Twitter Cards
+  title = "iXiAo9"
+  # 网站描述, 用于 RSS, SEO, Open Graph 和 Twitter Cards
+  description = "iXiAo9 - iXiAo9"
+  # 网站图片, 用于 Open Graph 和 Twitter Cards
+  images = ["https://s1.ax1x.com/2022/12/16/z7xK5n.png"]
+  # 页面头部导航栏配置
+  [params.header]
+    #桌面端导航栏模式 ["fixed", "normal", "auto"]
+    desktopMode = "auto"
+    # 页面头部导航栏标题配置
+    [params.header.title]
+      # LOGO 的 URL
+      logo = "https://s1.ax1x.com/2022/12/16/z7xK5n.png"
+      # 标题名称
+      name = "俺是小九"
+      #  是否为标题显示打字机动画
+      typeit = false
+
+  # 页面底部信息配置
+  [params.footer]
+    enable = true
+    # 是否显示 Hugo 和主题信息
+    hugo = false
+    # 是否显示版权信息
+    copyright = true
+    # 是否显示作者
+    author = false
+    since = 2022
+    icp = "京ICP备17068508号-2"
+    license= '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
+  # 主页的社交信息设置
+  [params.social]
+    GitHub = "#"
+    Email = "#"
+  [params.home]
+    # RSS 文章数目
+    rss = 10
+    # 主页个人信息
+    [params.home.profile]
+      enable = true
+      # Gravatar 邮箱，用于优先在主页显示的头像
+      gravatarEmail = ""
+      # 主页显示头像的 URL
+      avatarURL = "https://s1.ax1x.com/2022/12/16/z7xK5n.png"
+      # 主页显示的网站标题 (支持 HTML 格式)
+      title = "iXiAo9"
+      # 主页显示的网站副标题 (允许 HTML 格式)
+      subtitle = "Bedroom Producer, Site Reliability Engineering"
+      # 是否为副标题显示打字机动画
+      typeit = true
+      # 是否显示社交账号
+      social = true
+      # 免责声明 (支持 HTML 格式)
+      disclaimer = ""
+    # 主页文章列表
+    [params.home.posts]
+      enable = true
+      # special amount of posts in each home posts page
+      # 主页每页显示文章数量
+      paginate = 6   
+  [params.section]
+    # section 页面每页显示文章数量
+    paginate = 20
+    # 日期格式 (月和日)
+    dateFormat = "01-02"
+    # RSS 文章数目
+    rss = 10       
+  [params.list]
+    # list 页面每页显示文章数量
+    paginate = 20
+    # 日期格式 (月和日)
+    dateFormat = "01-02"
+    # RSS 文章数目
+    rss = 10
+  [params.app]
+    # 当添加到 iOS 主屏幕或者 Android 启动器时的标题, 覆盖默认标题
+    title = "LoveIt"
+    # 是否隐藏网站图标资源链接
+    noFavicon = false
+    # 更现代的 SVG 网站图标, 可替代旧的 .png 和 .ico 文件
+    svgFavicon = ""
+    # Android 浏览器主题色
+    themeColor = "#ffffff"
+    # Safari 图标颜色
+    iconColor = "#5bbad5"
+    # Windows v8-11 磁贴颜色
+    tileColor = "#da532c"
+  # 搜索配置        
+  # 文章页面全局配置
+  [params.page]
+    # 是否在主页隐藏一篇文章
+    hiddenFromHomePage = false
+    # 是否在搜索结果中隐藏一篇文章
+    hiddenFromSearch = false
+    # 是否使用 twemoji
+    twemoji = false
+    # 是否使用 lightgallery
+    lightgallery = false
+    # 是否使用 ruby 扩展语法
+    ruby = true
+    # 是否使用 fraction 扩展语法
+    fraction = true
+    # 是否使用 fontawesome 扩展语法
+    fontawesome = true
+    # 是否显示原始 Markdown 文档内容的链接
+    linkToMarkdown = true
+    # 是否在 RSS 中显示全文内容
+    rssFullText = false
+
+    # 目录配置
+    [params.page.toc]
+      # 是否使用目录
+      enable = true
+      # 是否保持使用文章前面的静态目录
+      keepStatic = false
+      # 是否使侧边目录自动折叠展开
+      auto = true
+    # 代码配置
+    [params.page.code]
+      # 是否显示代码块的复制按钮
+      copy = true
+      # 默认展开显示的代码行数
+      maxShownLines = 50
+            
+    # 文章页面的分享信息设置
+    [params.page.share]
+      enable = false
+
+    # 评论系统设置
+    [params.page.comment]
+      enable = true
+      # Valine 评论系统设置 (https://github.com/xCss/Valine)
+      [params.page.comment.valine]
+        enable = true
+        appId = "QGzwQXOqs5JOhN4RGPOkR2mR-MdYXbMMI"
+        appKey = "WBmoGyJtbqUswvfLh6L8iEBr"
+        placeholder = ""
+        avatar = "mp"
+        meta= ""
+        pageSize = 10
+        # 为空时自动适配当前主题 i18n 配置
+        lang = ""
+        visitor = true
+        recordIP = true
+        highlight = true
+        enableQQ = false
+        serverURLs = "https://leancloud.hugoloveit.com"
+        emoji = ""
+    [params.page.seo]
+      # image URL
+      # 图片 URL
+      images = []
+      # Publisher info
+      # 出版者信息
+      [params.page.seo.publisher]
+        name = "iXiAo9"
+        logoUrl = "/images/avatar.png"
+  # TypeIt 配置
+  [params.typeit]
+    # 每一步的打字速度 (单位是毫秒)
+    speed = 100
+    # 光标的闪烁速度 (单位是毫秒)
+    cursorSpeed = 1000
+    # 光标的字符 (支持 HTML 格式)
+    cursorChar = "|"
+    # 打字结束之后光标的持续时间 (单位是毫秒, "-1" 代表无限大)
+    duration = -1
+  # 网站 SEO 配置
+  [params.seo]
+    # 图片 URL
+    image = "/images/Apple-Devices-Preview.png"
+    # 缩略图 URL
+    thumbnailUrl = "/images/screenshot.png"    
+  # 兼容性设置
+  [params.compatibility]
+    # 是否使用 Polyfill.io 来兼容旧式浏览器
+    polyfill = false
+    # 是否使用 object-fit-images 来兼容旧式浏览器
+    objectFit = false
+# Hugo 解析文档的配置
+[markup]
+  # 语法高亮设置 (https://gohugo.io/content-management/syntax-highlighting)
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    lineNos = true
+    lineNumbersInTable = true
+    # false 是必要的设置 (https://github.com/dillonzq/LoveIt/issues/158)
+    noClasses = false
+  # Goldmark 是 Hugo 0.60 以来的默认 Markdown 解析库
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      definitionList = true
+      footnote = true
+      linkify = true
+      strikethrough = true
+      table = true
+      taskList = true
+      typographer = true
+    [markup.goldmark.renderer]
+      # 是否在文档中直接使用 HTML 标签
+      unsafe = true
+  # 目录设置
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 6
+
+# 用于输出 Markdown 格式文档的设置
+[mediaTypes]
+  [mediaTypes."text/plain"]
+    suffixes = ["md"]
+
+# 用于输出 Markdown 格式文档的设置
+[outputFormats.MarkDown]
+  mediaType = "text/plain"
+  isPlainText = true
+  isHTML = false
+
+# 用于 Hugo 输出文档的设置
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  page = ["HTML", "MarkDown"]
+  section = ["HTML", "RSS"]
+  taxonomy = ["HTML", "RSS"]
+  taxonomyTerm = ["HTML"]  
+
+  # 第三方库文件的 CDN 设置
+  [params.cdn]
+      data = "jsdelivr.yml"
+
+# 网站地图配置
+[sitemap]
+  changefreq = "weekly"
+  filename = "sitemap.xml"
+  priority = 0.5
+
+# Permalinks 配置 (https://gohugo.io/content-management/urls/#permalinks)
+[Permalinks]
+  # posts = ":year/:month/:filename"
+  posts = ":filename"
+
+# 隐私信息配置 (https://gohugo.io/about/hugo-and-gdpr/)
+[privacy]
+  # Google Analytics 相关隐私 (被 params.analytics.google 替代)
+  [privacy.googleAnalytics]
+    # ...
+  [privacy.twitter]
+    enableDNT = true
+  [privacy.youtube]
+    privacyEnhanced = true      
+
