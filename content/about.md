@@ -1,7 +1,7 @@
 ---
 title: "关于"
 date: 2022-12-16T20:38:10+08:00
-draft: true
+draft: false
 ---
 ##  关于我
 - 从事多年运维工作， 主要使用的语言是 Go 和 Shell 。

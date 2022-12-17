@@ -2,7 +2,7 @@
 title: "一个测试文件"
 date: 2022-12-16T22:25:18+08:00
 lastmod: 2022-12-16T22:25:18+08:00 
-draft: true
+draft: false
 
 author: "iXiAo9"
 authorLink: "#"
