@@ -1,1 +1,1 @@
-hugo -D server --bind="192.168.1.23" --port="80"
+hugo -D server --bind="192.168.1.23" --port="801"
